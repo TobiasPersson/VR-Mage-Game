@@ -156,6 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.SU21.VRMageGameSU21
+    Standalone: com.SU21.VR-Mage-Game-SU21
   buildNumber:
     Standalone: 0
     VisionOS: 0
