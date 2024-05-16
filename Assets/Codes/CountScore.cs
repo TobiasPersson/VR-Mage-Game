@@ -10,20 +10,16 @@ public class CountScore : MonoBehaviour
 {
     public Text Score;
 
+    public static int Manypoints;
     // Start is called before the first frame update
     void Start()
     {
-        teddyCount.text = "" + teddysleft;
+        Score.text = "" + Manypoints;
 
-        if (teddysleft == 0)
-        {
-            teddyCount.text = "Winner Winner Kyckling Dinner!";
-        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void GetPoints()
     {
-        
+        Manypoints++;
+        Score.text = " Points" + Manypoints ;
     }
 }
