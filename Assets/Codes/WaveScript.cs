@@ -8,7 +8,7 @@ public class WaveScript : MonoBehaviour
 
     public List<GameObject> enemiesList = new List<GameObject>();
 
-   [SerializeField] public int wave;
+    public int wave;
 
     public int enemiesAlive;
 
