@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 237271007}
   - component: {fileID: 237271006}
   - component: {fileID: 237271005}
+  - component: {fileID: 237271009}
   m_Layer: 0
   m_Name: CubeRed
   m_TagString: Untagged
@@ -282,6 +283,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &237271009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237271004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8eb1ab06839f54f8dd0906bac744eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 237271004}
+  countScore: {fileID: 1506842735}
 --- !u!1 &293791119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f2232cd7d5f2e847aadbc0d06d5a572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: {fileID: 0}
+  Score: {fileID: 1506842736}
 --- !u!114 &1506842736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,6 +2267,7 @@ GameObject:
   - component: {fileID: 1688149596}
   - component: {fileID: 1688149595}
   - component: {fileID: 1688149594}
+  - component: {fileID: 1688149598}
   m_Layer: 0
   m_Name: CubeWhite
   m_TagString: Untagged
@@ -2337,6 +2353,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1688149598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688149593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8eb1ab06839f54f8dd0906bac744eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 1688149593}
+  countScore: {fileID: 1506842735}
 --- !u!1 &1697657274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2643,7 @@ GameObject:
   - component: {fileID: 1921651184}
   - component: {fileID: 1921651183}
   - component: {fileID: 1921651182}
+  - component: {fileID: 1921651186}
   m_Layer: 0
   m_Name: CubeBlue
   m_TagString: Untagged
@@ -2698,6 +2729,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1921651186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921651181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8eb1ab06839f54f8dd0906bac744eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 1921651181}
+  countScore: {fileID: 1506842735}
 --- !u!1 &2008341727
 GameObject:
   m_ObjectHideFlags: 0
