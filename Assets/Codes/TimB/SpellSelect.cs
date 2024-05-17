@@ -6,30 +6,31 @@ public class SpellSelect : MonoBehaviour
 {
     [SerializeField]
     GameObject spellElement, spellForm;
-    GameObject formType;
+    [SerializeField]
+    Transform wand;
     ElementSO elementType;
-    Vector3 wandPosition;
-    Quaternion wandRotation;
+    WandManager wm;
 
+    void Start()
+    {
+        wm = FindObjectOfType(typeof(WandManager)) as WandManager;
+        InstantiateElementCircle();
+    }
     public void InstantiateElementCircle()
     {
-        wandPosition = gameObject.transform.position;
-        wandRotation = gameObject.transform.rotation;
-        Instantiate(spellElement, wandPosition, wandRotation);
+        GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(80, wand.rotation.y, wand.rotation.z, wand.rotation.w));
+        circle.transform.parent = gameObject.transform;
     }
     public void DestroyElementCircle(ElementSO element)
     {
         elementType = element;
         Destroy(gameObject.transform.GetChild(0).gameObject);
-        InstantiateFormCircle();
-    }
-    public void InstantiateFormCircle()
-    {
-        Instantiate(spellForm, wandPosition, wandRotation);
+        GameObject circle = Instantiate(spellForm, wand.position, wand.rotation);
+        circle.transform.parent = gameObject.transform;
     }
     public void DestroyFormCircle(GameObject form)
     {
-        formType = form;
         Destroy(gameObject.transform.GetChild(0).gameObject);
+        wm.SetSpellInfo(form, elementType);
     }
 }
