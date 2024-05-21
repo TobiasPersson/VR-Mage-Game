@@ -7,20 +7,19 @@ using UnityEngine.Events;
 using UnityEngine.XR;
 using TMPro;
 
-public class CountScore : MonoBehaviour
+public class NextWave : MonoBehaviour
 {
-    public TextMeshProUGUI Score;
+    public TextMeshProUGUI Wave;
+    public static int CurretnWave;
 
-    public static int Manypoints;
     // Start is called before the first frame update
     void Start()
     {
-        Score.text = "" + Manypoints;
-
+        Wave.text = "" + CurretnWave;
     }
-    public void GetPoints()
+    public void WaveLooking()
     {
-        Manypoints++;
-        Score.text = " Points:" + " " + Manypoints ;
+        CurretnWave++;
+        Wave.text = " Wave:" + " " + CurretnWave;
     }
 }

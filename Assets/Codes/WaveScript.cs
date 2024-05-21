@@ -12,10 +12,13 @@ public class WaveScript : MonoBehaviour
 
     public int enemiesAlive;
 
+    [SerializeField]
+    NextWave nextwave;
     // Start is called before the first frame update
     void Start()
     {
-        
+        nextwave.GetComponent<NextWave>();
+
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class WaveScript : MonoBehaviour
     {
         if (enemiesAlive <= 0)
         {
+            nextwave.WaveLooking();
             wave++;
             Waves();
         }
