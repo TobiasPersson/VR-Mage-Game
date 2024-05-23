@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c492af81b7bac764c9cb30367a326972, type: 3}
-  m_Name: Fire
+  m_Name: Water
   m_EditorClassIdentifier: 
   elementAttackLayer:
     serializedVersion: 2
-    m_Bits: 2147483648
+    m_Bits: 268435456
   elementColor:
     serializedVersion: 2
-    rgba: 255
+    rgba: 16711680
