@@ -155,6 +155,7 @@ MonoBehaviour:
   spellElement: {fileID: 1225163497007508440, guid: 66509be16f78572478e2d803c802ae00, type: 3}
   spellForm: {fileID: 1225163497007508440, guid: 766b397c0b7d2dd4e8a997ecdc71a6e5, type: 3}
   wand: {fileID: 1669190819}
+  camera: {fileID: 2008341728}
 --- !u!4 &321172747
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class SpellSelect : MonoBehaviour
     GameObject spellElement, spellForm;
     [SerializeField]
     Transform wand;
+    [SerializeField]
+    Transform camera;
     ElementSO elementType;
     WandManager wm;
     public XRIDefaultInputActions input;
@@ -39,8 +41,9 @@ public class SpellSelect : MonoBehaviour
     }
     public void InstantiateElementCircle()
     {
-        GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(100, wand.rotation.y, wand.rotation.z, wand.rotation.w));
+        GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(0, 0, 0, 0));
         circle.transform.parent = gameObject.transform;
+        circle.transform.LookAt(camera);
     }
     public void DestroyElementCircle(ElementSO element)
     {
