@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-    [SerializeField] private LayerMask layer;
+    [SerializeField] protected LayerMask layer;
     public void SetLayer(LayerMask layerMask)
     {
         layer = layerMask;
