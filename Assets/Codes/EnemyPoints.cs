@@ -19,7 +19,7 @@ public class EnemyPoints : MonoBehaviour
     }
     void Update()
     {
-      //  if(health <= 0)
+      if (Input.GetKeyDown(KeyCode.Y))
         {
             Destroy(Enemy);
             countScore.GetPoints();
