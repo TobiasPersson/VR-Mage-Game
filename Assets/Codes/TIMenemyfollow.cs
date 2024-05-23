@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TIMenemyfollow : MonoBehaviour
 {
-    public int hp;
+    
     public float speed = 20.0f;
     public float minDist = 1f;
     public Transform target;
@@ -19,9 +19,14 @@ public class TIMenemyfollow : MonoBehaviour
         // if no target specified, assume the player
         if (target == null)
         {
-            if (GameObject.FindWithTag("Player") != null)
+            GameObject targetObject = GameObject.Find("Target");
+            if (targetObject != null)
             {
-                target = GameObject.FindWithTag("Player").GetComponent<Transform>();
+                target = targetObject.transform;
+            }
+            else
+            {
+                Debug.LogError("Target object not found. Please ensure there is a GameObject named 'Target' in the scene.");
             }
         }
     }
