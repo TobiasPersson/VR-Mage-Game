@@ -33,4 +33,8 @@ public class SpellSelect : MonoBehaviour
         Destroy(gameObject.transform.GetChild(0).gameObject);
         wm.SetSpellInfo(form, elementType);
     }
+    public void DestroyCircles()
+    {
+        Destroy(gameObject.transform.GetChild(0).gameObject);
+    }
 }

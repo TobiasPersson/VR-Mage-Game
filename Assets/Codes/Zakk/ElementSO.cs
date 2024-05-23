@@ -8,6 +8,9 @@ public class ElementSO : ScriptableObject
 
     public LayerMask elementAttackLayer;
 
+    public ElementEnum elementEnum;
+
     public Color32 elementColor;
+
 
 }

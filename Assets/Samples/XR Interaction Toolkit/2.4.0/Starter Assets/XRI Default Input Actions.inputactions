@@ -1365,6 +1365,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Activate Release",
+                    "type": "Button",
+                    "id": "62c49151-ebc0-4f4e-ba22-15c6a1592d2e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=1.401298E-45)",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Activate Value",
                     "type": "Value",
                     "id": "c3ca6ed7-3d25-44a2-b1d8-5be4eb699370",
@@ -1560,6 +1569,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "UI Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f81f759-211c-4d44-98e2-0a1a75d21c81",
+                    "path": "<PXR_Controller>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate Release",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

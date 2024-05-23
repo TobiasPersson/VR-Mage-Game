@@ -15,6 +15,7 @@ MonoBehaviour:
   elementAttackLayer:
     serializedVersion: 2
     m_Bits: 268435456
+  elementEnum: 1
   elementColor:
     serializedVersion: 2
     rgba: 16711680

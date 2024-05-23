@@ -3,8 +3,20 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 
+public enum ElementEnum
+{
+    Fire,
+    Water,
+    Earth,
+    Air,
+};
+
 public class Spell : MonoBehaviour
 {
+    public ElementEnum element;
+
+
+
     [SerializeField] protected LayerMask layer;
     public void SetLayer(LayerMask layerMask)
     {

@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Title Screen.unity
+    guid: e41ca67a48367d149996606279f3ac96
   - enabled: 1
-    path: Assets/Scenes/VFXTestingScene.unity
-    guid: 8c01d2d5a9516f444870fd74474c90e1
+    path: Assets/Scenes/Elliot.unity
+    guid: 258b609f7c8f83f44ac2c3551f89ec85
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 20ba8c55d00a3be4db76a6aab86bb683, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c17865f82b18535419a747b70b4b8983, type: 2}
