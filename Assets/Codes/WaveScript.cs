@@ -39,7 +39,7 @@ public class WaveScript : MonoBehaviour
         {
             for (int i = 0; i < wave - 4; i++)
             {
-                Enemies.Add(enemiesList[1]);
+                Enemies.Add(enemiesList[Random.Range(4, 8)]);
             }
         }
 
@@ -47,7 +47,7 @@ public class WaveScript : MonoBehaviour
 
         for (int i = 0; i < numberOfEnemies; i++)
         {
-            Enemies.Add(enemiesList[0]);
+            Enemies.Add(enemiesList[Random.Range(0,3)]);
         }
 
         foreach (GameObject enemie in Enemies)
