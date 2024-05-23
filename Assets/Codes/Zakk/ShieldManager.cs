@@ -18,8 +18,14 @@ public class ShieldManager : MonoBehaviour
 
     public void ResetShields(GameObject newshield)
     {
-        Destroy(currentShield);
+        if(currentShield != null)
+        {
+            Destroy(currentShield);
+            Debug.Log("Removed " + currentShield.name);
+        }
+
         currentShield = newshield;
+        Debug.Log("Added " + currentShield.name);
     }
 
 
