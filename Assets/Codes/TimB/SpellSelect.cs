@@ -23,7 +23,6 @@ public class SpellSelect : MonoBehaviour
     }
     void Start()
     {
-        print(input.XRIRightHandInteraction.Activate.WasPressedThisFrame());
         wm = FindObjectOfType(typeof(WandManager)) as WandManager;
     }
 
@@ -31,18 +30,16 @@ public class SpellSelect : MonoBehaviour
     {
         if (input.XRIRightHandInteraction.Activate.WasPressedThisFrame())
         {
-            print("hello");
+            InstantiateElementCircle();
+        }
+        if (input.XRIRightHandInteraction.Activate.WasReleasedThisFrame())
+        {
+            DestroyCircles();
         }
     }
-    public void OnActivate()
-    {
-        InstantiateElementCircle();
-    }
-
     public void InstantiateElementCircle()
     {
-        print("test!");
-        GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(80, wand.rotation.y, wand.rotation.z, wand.rotation.w));
+        GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(100, wand.rotation.y, wand.rotation.z, wand.rotation.w));
         circle.transform.parent = gameObject.transform;
     }
     public void DestroyElementCircle(ElementSO element)
