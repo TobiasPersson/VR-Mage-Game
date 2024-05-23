@@ -10,14 +10,38 @@ public class SpellSelect : MonoBehaviour
     Transform wand;
     ElementSO elementType;
     WandManager wm;
+    public XRIDefaultInputActions input;
 
+    private void OnEnable()
+    {
+        input = new XRIDefaultInputActions();
+        input.Enable();
+    }
+    private void OnDisable()
+    {
+        input.Disable();
+    }
     void Start()
     {
+        print(input.XRIRightHandInteraction.Activate.WasPressedThisFrame());
         wm = FindObjectOfType(typeof(WandManager)) as WandManager;
+    }
+
+    private void Update()
+    {
+        if (input.XRIRightHandInteraction.Activate.WasPressedThisFrame())
+        {
+            print("hello");
+        }
+    }
+    public void OnActivate()
+    {
         InstantiateElementCircle();
     }
+
     public void InstantiateElementCircle()
     {
+        print("test!");
         GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(80, wand.rotation.y, wand.rotation.z, wand.rotation.w));
         circle.transform.parent = gameObject.transform;
     }
