@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShieldSpell : MonoBehaviour
+public class ShieldSpell : Spell
 {
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ShieldManager.instance.ResetShields(gameObject);
     }
 }
