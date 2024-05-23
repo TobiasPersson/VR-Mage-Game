@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FormSelect : MonoBehaviour
 {
-    public SpellSelect ss;
-    [SerializeField] GameObject form;
+    [HideInInspector] public SpellSelect ss;
+    [SerializeField] private GameObject form;
     public virtual void Start()
     {
         ss = FindObjectOfType(typeof(SpellSelect)) as SpellSelect;
