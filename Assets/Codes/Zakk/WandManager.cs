@@ -31,7 +31,7 @@ public class WandManager : MonoBehaviour
         Spell spellScript = spellObj.GetComponent<Spell>();
         spellScript.element = element.elementEnum;
         spellScript.SetColor(element.elementColor);
-        spellScript.SetLayer(element.elementAttackLayer);
+        //spellScript.SetLayer(element.elementAttackLayer);
         Debug.Log("Casted Spell");
     }
 

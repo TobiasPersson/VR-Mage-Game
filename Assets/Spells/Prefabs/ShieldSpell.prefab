@@ -53,6 +53,8 @@ MonoBehaviour:
   color:
     serializedVersion: 2
     rgba: 11377722
+  meshRenderer: {fileID: 2414045675510476064}
+  visualEffect: {fileID: 0}
 --- !u!135 &3326213101517565029
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -123,6 +125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31e10a2c79c8155438835e8732f74469, type: 3}
+--- !u!23 &2414045675510476064 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4877022783676250054, guid: 31e10a2c79c8155438835e8732f74469, type: 3}
+  m_PrefabInstance: {fileID: 7074807163702270694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5507615791321762172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3332726121938293658, guid: 31e10a2c79c8155438835e8732f74469, type: 3}
