@@ -11,6 +11,8 @@ public class WandManager : MonoBehaviour
 
     [SerializeField] private ElementSO element;
 
+    [SerializeField] private GameObject aimPoint;
+
     public GameObject rightHandController;
 
     private bool shooting = false;
@@ -51,6 +53,7 @@ public class WandManager : MonoBehaviour
     public void CastSpell()
     {
         GameObject spellObj = Instantiate(currentSpellform, transform.position, Quaternion.identity);
+        spellObj.transform.LookAt(aimPoint.transform);
         Spell spellScript = spellObj.GetComponent<Spell>();
         spellScript.element = element.elementEnum;
         spellScript.SetColor(element.elementColor);

@@ -7,12 +7,13 @@ public class SpellSelect : MonoBehaviour
     [SerializeField]
     GameObject spellElement, spellForm;
     [SerializeField]
-    Transform wand;
+    Transform wand, spawnPos;
     [SerializeField]
     Transform camera;
     ElementSO elementType;
     WandManager wm;
     public XRIDefaultInputActions input;
+    Vector3 setSpawnPos;
 
     private void OnEnable()
     {
@@ -41,7 +42,8 @@ public class SpellSelect : MonoBehaviour
     }
     public void InstantiateElementCircle()
     {
-        GameObject circle = Instantiate(spellElement, wand.position, new Quaternion(0, 0, 0, 0));
+        setSpawnPos = spawnPos.position;
+        GameObject circle = Instantiate(spellElement, setSpawnPos, new Quaternion(0, 0, 0, 0));
         circle.transform.parent = gameObject.transform;
         circle.transform.LookAt(camera);
     }
@@ -49,8 +51,9 @@ public class SpellSelect : MonoBehaviour
     {
         elementType = element;
         Destroy(gameObject.transform.GetChild(0).gameObject);
-        GameObject circle = Instantiate(spellForm, wand.position, wand.rotation);
+        GameObject circle = Instantiate(spellForm, setSpawnPos, wand.rotation);
         circle.transform.parent = gameObject.transform;
+        circle.transform.LookAt(camera);
     }
     public void DestroyFormCircle(GameObject form)
     {
@@ -59,6 +62,10 @@ public class SpellSelect : MonoBehaviour
     }
     public void DestroyCircles()
     {
-        Destroy(gameObject.transform.GetChild(0).gameObject);
+        int childrenCount = gameObject.transform.childCount;
+        for (int i = 0; i < childrenCount; i++)
+        {
+            Destroy(gameObject.transform.GetChild(i).gameObject);
+        }
     }
 }

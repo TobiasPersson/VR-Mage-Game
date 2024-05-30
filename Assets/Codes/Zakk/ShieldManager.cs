@@ -6,6 +6,7 @@ public class ShieldManager : MonoBehaviour
 {
     public static ShieldManager instance { get; private set; }
     [SerializeField] private GameObject currentShield;
+    [SerializeField] GameObject shieldPos;
 
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class ShieldManager : MonoBehaviour
         }
 
         currentShield = newshield;
+        newshield.transform.position = shieldPos.transform.position;
         Debug.Log("Added " + currentShield.name);
     }
 

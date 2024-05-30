@@ -8,7 +8,6 @@ public class RangedSpell : Spell
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float speed;
     [SerializeField] private float intensity;
-
     float lifetime = 20;
     float timer = 0;
 
