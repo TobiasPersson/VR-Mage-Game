@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e56e903c304eb428c8674605f66609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSpellform: {fileID: 5259911510163101329, guid: 56388a31cba65394d9d2325ddc14fe3d, type: 3}
+  currentSpellform: {fileID: 8086592768368322172, guid: 076dd808b84c5944f98c54752e9cb2d1, type: 3}
   element: {fileID: 11400000, guid: 06b95c457ff7af946b61a411d7c2d977, type: 2}
   rightHandController: {fileID: 0}
 --- !u!4 &249734746
