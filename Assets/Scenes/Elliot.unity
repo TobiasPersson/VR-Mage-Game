@@ -2254,8 +2254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc29b424cd53da2489131cd4f997d757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellElement: {fileID: 0}
-  spellForm: {fileID: 0}
+  spellElement: {fileID: 1225163497007508440, guid: 66509be16f78572478e2d803c802ae00, type: 3}
+  spellForm: {fileID: 1225163497007508440, guid: 766b397c0b7d2dd4e8a997ecdc71a6e5, type: 3}
   wand: {fileID: 213872086}
   spawnPos: {fileID: 213872087}
   camera: {fileID: 1828131125}
