@@ -6,7 +6,7 @@ public class skeletonHP : EnemyHPBase
 {
     public override void PlayerTakeDMG()
     {
-        //player.HP -= skeletonDMG
+        playerSlider.TakeDamage(skeletonDMG);
     }
 
     public override void EnemyTakeDMG()
