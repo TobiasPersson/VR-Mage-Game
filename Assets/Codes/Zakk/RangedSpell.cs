@@ -19,6 +19,7 @@ public class RangedSpell : Spell
     private void Start()
     {
         visualEffect.SetVector4("FrontColor", new Vector4(color.r * intensity, color.g*intensity, color.b*intensity, color.a*intensity));
+        transform.position = transform.position + transform.forward * 2;
     }
 
 

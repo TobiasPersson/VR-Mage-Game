@@ -50,7 +50,7 @@ public class WandManager : MonoBehaviour
 
     public void CastSpell()
     {
-        GameObject spellObj = Instantiate(currentSpellform, transform.position + transform.forward * 4, Quaternion.identity);
+        GameObject spellObj = Instantiate(currentSpellform, transform.position, Quaternion.identity);
         Spell spellScript = spellObj.GetComponent<Spell>();
         spellScript.element = element.elementEnum;
         spellScript.SetColor(element.elementColor);
