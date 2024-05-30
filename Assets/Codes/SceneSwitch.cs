@@ -22,5 +22,10 @@ public class SceneSwitch : MonoBehaviour
         SceneManager.LoadScene(1);
 
     }
+    public void BackToTitle()
+    {
+        SceneManager.LoadScene(0);
+
+    }
 
 }

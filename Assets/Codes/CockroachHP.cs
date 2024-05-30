@@ -6,7 +6,7 @@ public class CockroachHP : EnemyHPBase
 {
     public override void PlayerTakeDMG()
     {
-        //player.HP -= cockroachDMG
+        playerSlider.TakeDamage(cockroachDMG);
     }
 
     public override void EnemyTakeDMG()
