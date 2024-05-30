@@ -23,7 +23,7 @@ public class Spell : MonoBehaviour
         layer = layerMask;
     }
 
-    [SerializeField] private Color32 color;
+    [SerializeField] protected Color32 color;
     public void SetColor(Color32 color32)
     {
         color = color32;

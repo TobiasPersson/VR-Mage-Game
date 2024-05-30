@@ -20,6 +20,12 @@ public class SceneSwitch : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+
+    }
+    public void BackToTitle()
+    {
+        SceneManager.LoadScene(0);
+
     }
 
 }

@@ -1486,6 +1486,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7999a454-8dfb-4da0-855e-14d63eb9bcf8",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "150f414f-61bf-47b1-b4f8-f772a2a40565",
                     "path": "<XRController>{RightHand}/trigger",
                     "interactions": "",
@@ -1577,6 +1588,17 @@
                     "id": "6f81f759-211c-4d44-98e2-0a1a75d21c81",
                     "path": "<PXR_Controller>{RightHand}/triggerPressed",
                     "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate Release",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "327e792c-aef4-4fd3-9129-7d38ac7fa780",
+                    "path": "<Keyboard>/t",
+                    "interactions": "Hold(duration=1.401298E-45)",
                     "processors": "",
                     "groups": "",
                     "action": "Activate Release",
@@ -2213,6 +2235,45 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Test",
+            "id": "4de7bc9e-972b-4212-8e39-98038f6f11fa",
+            "actions": [
+                {
+                    "name": "tst action",
+                    "type": "Button",
+                    "id": "ac2a1f47-ae7e-4646-90d5-6b284cd750fb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6b0a3150-5b3e-4927-b553-811bcf3d3cbd",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "tst action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b33c56d6-cbef-4f1c-b7de-f7b5e531dee7",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "tst action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
