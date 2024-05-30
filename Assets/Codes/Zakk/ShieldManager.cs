@@ -28,5 +28,10 @@ public class ShieldManager : MonoBehaviour
         Debug.Log("Added " + currentShield.name);
     }
 
+    public void RemoveShield()
+    {
+        currentShield = null;
+    }
+
 
 }

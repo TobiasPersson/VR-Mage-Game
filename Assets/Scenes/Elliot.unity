@@ -1905,6 +1905,7 @@ GameObject:
   - component: {fileID: 1241562491}
   - component: {fileID: 1241562490}
   - component: {fileID: 1241562489}
+  - component: {fileID: 1241562494}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1972,7 +1973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 10
   healthbar: {fileID: 424180914}
 --- !u!114 &1241562489
 MonoBehaviour:
@@ -2135,6 +2136,18 @@ MonoBehaviour:
   minEyeTextureScale: 0.7
   maxEyeTextureScale: 1.26
   useRecommendedAntiAliasingLevel: 1
+--- !u!114 &1241562494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241562484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdd6231ede745a4c8dd8a73664da971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1436688783
 GameObject:
   m_ObjectHideFlags: 0
