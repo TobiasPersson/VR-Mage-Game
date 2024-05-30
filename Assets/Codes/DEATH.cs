@@ -22,7 +22,7 @@ public class DEATH : MonoBehaviour
         if (health >= 0)
         {
             //die
-            scenmg.StartGame();
+            scenmg.BackToTitle();
         }
     }
 }
