@@ -5,14 +5,19 @@ using UnityEngine;
 public class BaseSelect : MonoBehaviour
 {
     [HideInInspector] public SpellSelect ss;
+    [HideInInspector] public float delay;
     public virtual void Start()
     {
         ss = FindObjectOfType(typeof(SpellSelect)) as SpellSelect;
     }
-
-    public virtual void OnCollisionEnter(Collision collision)
+    public virtual void Update()
     {
-        if (collision.gameObject.layer == 3)
+        delay += Time.deltaTime;
+    }
+
+    public virtual void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.layer == 3 && delay >= 0.25f)
         {
             sendType();
         }

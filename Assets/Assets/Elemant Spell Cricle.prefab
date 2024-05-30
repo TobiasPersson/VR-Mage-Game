@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 3449318442606317529}
   - component: {fileID: 8311186732118967635}
   - component: {fileID: 2640224871856502903}
+  - component: {fileID: 3349367516744035890}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -171,7 +172,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548539971838192635}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -189,8 +190,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ss: {fileID: 0}
-  form: {fileID: 0}
-  element: {fileID: 0}
+  element: {fileID: 11400000, guid: 06b95c457ff7af946b61a411d7c2d977, type: 2}
+--- !u!54 &3349367516744035890
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548539971838192635}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1683026445518271058
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +315,7 @@ GameObject:
   - component: {fileID: 5063623399627691791}
   - component: {fileID: 1164086999236018583}
   - component: {fileID: 4430863191438715175}
+  - component: {fileID: 1582861378260921695}
   m_Layer: 0
   m_Name: Air
   m_TagString: Untagged
@@ -330,7 +347,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4074487462860889887}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -348,8 +365,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ss: {fileID: 0}
-  form: {fileID: 0}
-  element: {fileID: 0}
+  element: {fileID: 11400000, guid: a87df55d57745ae4e870fa1825c0ab6d, type: 2}
+--- !u!54 &1582861378260921695
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4074487462860889887}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5173097530995558566
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 5320698987081456848}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5902791186227841541}
@@ -577,6 +609,7 @@ GameObject:
   - component: {fileID: 2542099276429705832}
   - component: {fileID: 7308104691307491507}
   - component: {fileID: 8118241105351351454}
+  - component: {fileID: 1234502079460523959}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -608,7 +641,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7254175165912815479}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -626,8 +659,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ss: {fileID: 0}
-  form: {fileID: 0}
-  element: {fileID: 0}
+  element: {fileID: 11400000, guid: d81aa625d14af2d43bdbea3f2d1ff767, type: 2}
+--- !u!54 &1234502079460523959
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254175165912815479}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8473804077000372106
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +784,7 @@ GameObject:
   - component: {fileID: 5902791186227841541}
   - component: {fileID: 1265611754549046875}
   - component: {fileID: 5195573611838430966}
+  - component: {fileID: 3449610307618635458}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -767,7 +816,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8694636862289368514}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -785,5 +834,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ss: {fileID: 0}
-  form: {fileID: 0}
-  element: {fileID: 0}
+  element: {fileID: 11400000, guid: 214e526588156984d80a669b24a80013, type: 2}
+--- !u!54 &3449610307618635458
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8694636862289368514}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -8,7 +8,6 @@ public class RangedSpell : Spell
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float speed;
     [SerializeField] private float intensity;
-
     float lifetime = 20;
     float timer = 0;
 
@@ -19,6 +18,7 @@ public class RangedSpell : Spell
     private void Start()
     {
         visualEffect.SetVector4("FrontColor", new Vector4(color.r * intensity, color.g*intensity, color.b*intensity, color.a*intensity));
+        transform.position = transform.position + transform.forward * 2;
     }
 
 
