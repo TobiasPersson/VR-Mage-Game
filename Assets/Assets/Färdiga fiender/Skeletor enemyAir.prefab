@@ -1225,6 +1225,7 @@ GameObject:
   - component: {fileID: 7665007578114213109}
   - component: {fileID: 6081738699388307259}
   - component: {fileID: 9195866761884672115}
+  - component: {fileID: -606957208849593260}
   m_Layer: 0
   m_Name: Skeletor enemyAir
   m_TagString: Untagged
@@ -1330,6 +1331,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a48a75485d692419c03475e31548c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-606957208849593260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7276033679580396740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624c8de97200458419220a7d1c9f4c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: 3
+  skeletonHP: 15
+  cockroachHP: 5
+  skeletonDMG: 3
+  cockroachDMG: 1
+  playerSlider: {fileID: 0}
 --- !u!1 &7297408713633538276
 GameObject:
   m_ObjectHideFlags: 0

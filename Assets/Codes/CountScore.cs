@@ -15,12 +15,12 @@ public class CountScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Score.text = "" + Manypoints;
+        Score.text = " Points:" +  " " + Manypoints;
 
     }
     public void GetPoints()
     {
         Manypoints++;
-        Score.text = " Points:" + " " + Manypoints ;
+        Score.text = " Points:" + " " + Manypoints;
     }
 }
