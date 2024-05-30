@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 2967152167744302654}
   - component: {fileID: 2967152167744302655}
   - component: {fileID: 2967152167744302627}
+  - component: {fileID: 756625483957489635}
   m_Layer: 0
   m_Name: Skeletor enemy
   m_TagString: Untagged
@@ -659,6 +660,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a48a75485d692419c03475e31548c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &756625483957489635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967152167744302652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624c8de97200458419220a7d1c9f4c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: 0
+  skeletonHP: 15
+  cockroachHP: 5
+  skeletonDMG: 3
+  cockroachDMG: 1
+  playerSlider: {fileID: 0}
 --- !u!1 &3045950299702284215
 GameObject:
   m_ObjectHideFlags: 0

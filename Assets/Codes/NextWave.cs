@@ -15,7 +15,7 @@ public class NextWave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Wave.text = "" + CurretnWave;
+        Wave.text = " Wave:" + " " + CurretnWave;
     }
     public void WaveLooking()
     {
